@@ -10,6 +10,7 @@ exports.calculate = function(req, res) {
     res.json({ error: err.message });
   });
 
+   // Missed the change on this line first time.
   var operations = {
     'add':      function(a,b) { return a + b },
     'subtract': function(a,b) { return a - b },
